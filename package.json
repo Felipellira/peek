@@ -1,0 +1,28 @@
+{
+  "name": "@rbxts/peek",
+  "version": "1.0.1",
+  "description": "A simple logging library for Roblox",
+  "main": "out/init.lua",
+  "scripts": {
+    "build": "rbxtsc",
+    "watch": "rbxtsc -w",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [],
+  "author": "Felipe Lira",
+  "license": "ISC",
+  "types": "out/index.d.ts",
+  "files": [
+    "out",
+    "!**/*.tsbuildinfo"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@rbxts/compiler-types": "^3.0.0-types.0",
+    "@rbxts/types": "^1.0.881",
+    "roblox-ts": "^3.0.0",
+    "typescript": "^5.9.2"
+  }
+}
