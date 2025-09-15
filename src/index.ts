@@ -88,10 +88,3 @@ export class Peek {
 		this.sendLogEntry(this.buildLogEntry(message, LogLevel.ERROR));
 	}
 }
-
-const peek = new Peek({
-	loggerName: "Global",
-	logLevel: LogLevel.DEBUG,
-}, [new ConsoleOutputMethod()]);
-
-peek.info("Hello, world!");
